@@ -1,5 +1,6 @@
 import os
 import json
+import urllib.parse # <-- Added this to fix URL spaces
 
 # Replace with your GitHub details
 GITHUB_USER = "SickDuck696969"
@@ -22,8 +23,14 @@ for root, dirs, files in os.walk("."):
 
     for file in files:
         if any(file.lower().endswith(ext) for ext in VALID_EXTENSIONS):
+            # 1. Get the relative path
             rel_path = os.path.relpath(os.path.join(root, file), ".").replace("\\", "/")
-            download_url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{rel_path}"
+            
+            # 2. URL-Encode the path (converts spaces to %20) but leaves the / slashes alone
+            encoded_path = urllib.parse.quote(rel_path, safe='/')
+            
+            # 3. Build the final safe URL
+            download_url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{encoded_path}"
             
             manifest.append({
                 "name": file,
@@ -31,7 +38,7 @@ for root, dirs, files in os.walk("."):
                 "downloadUrl": download_url
             })
 
-# Sort the manifest entries alphabetically by file name (case-insensitive)
+# Sorts by Console folder first, then alphabetically by Game Name
 manifest.sort(key=lambda x: (x["console"].lower(), x["name"].lower()))
 
 with open("manifest.json", "w") as f:

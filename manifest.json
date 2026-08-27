@@ -1,5 +1,25 @@
 [
   {
+    "name": ".empty",
+    "console": "3DS",
+    "downloadUrl": ""
+  },
+  {
+    "name": ".empty",
+    "console": "Arcade",
+    "downloadUrl": ""
+  },
+  {
+    "name": ".empty",
+    "console": "Book",
+    "downloadUrl": ""
+  },
+  {
+    "name": ".empty",
+    "console": "GB",
+    "downloadUrl": ""
+  },
+  {
     "name": "Advance Wars.zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Advance%20Wars.zip"
@@ -75,9 +95,19 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Yu-Gi-Oh%21%20Ultimate%20Masters%20-%20World%20Championship%20Tournament%202006.zip"
   },
   {
+    "name": ".empty",
+    "console": "GBC",
+    "downloadUrl": ""
+  },
+  {
     "name": "Super Mario 64.zip",
     "console": "N64",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Super%20Mario%2064.zip"
+  },
+  {
+    "name": ".empty",
+    "console": "NDS",
+    "downloadUrl": ""
   },
   {
     "name": "Adventure Island 3 (USA).nes",
@@ -733,6 +763,16 @@
     "name": "Zombie Nation (USA).nes",
     "console": "NES",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NES/Zombie%20Nation%20%28USA%29.nes"
+  },
+  {
+    "name": ".empty",
+    "console": "PSP",
+    "downloadUrl": ""
+  },
+  {
+    "name": ".empty",
+    "console": "PSX",
+    "downloadUrl": ""
   },
   {
     "name": "Mega Man X.zip",

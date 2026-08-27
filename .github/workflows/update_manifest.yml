@@ -1,0 +1,52 @@
+name: Auto-Generate ROM Manifest
+
+# Run this workflow whenever files are pushed to the master branch
+on:
+  push:
+    branches:
+      - master
+    # Only trigger if ROM files or the script itself are modified
+    paths:
+      - '**/*.zip'
+      - '**/*.7z'
+      - '**/*.nes'
+      - '**/*.sfc'
+      - '**/*.gba'
+      - '**/*.n64'
+      - '**/*.z64'
+      - '**/*.bin'
+      - 'generate_manifest.py'
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    
+    # Required permission to push commits back to the repository
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate manifest.json
+        run: python generate_manifest.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          
+          # Check if there are any changes to manifest.json before committing
+          if git diff --staged --quiet; then
+            echo "No changes to manifest.json"
+          else
+            git commit -m "Auto-update manifest.json [skip ci]"
+            git push
+          fi

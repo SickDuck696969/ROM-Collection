@@ -15,9 +15,59 @@
     "downloadUrl": ""
   },
   {
-    "name": ".empty",
+    "name": "Bionic Commando (USA).gb",
     "console": "GB",
-    "downloadUrl": ""
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Bionic%20Commando%20%28USA%29.gb"
+  },
+  {
+    "name": "Castlevania II - Belmont's Revenge (USA, Europe).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Castlevania%20II%20-%20Belmont%27s%20Revenge%20%28USA%2C%20Europe%29.gb"
+  },
+  {
+    "name": "Cave Noire (Japan).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Cave%20Noire%20%28Japan%29.gb"
+  },
+  {
+    "name": "Donkey Kong (World) (Rev 1) (SGB Enhanced).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Donkey%20Kong%20%28World%29%20%28Rev%201%29%20%28SGB%20Enhanced%29.gb"
+  },
+  {
+    "name": "Final Fantasy Adventure (USA).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Final%20Fantasy%20Adventure%20%28USA%29.gb"
+  },
+  {
+    "name": "Gargoyle's Quest (Europe) (Rev 1).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Gargoyle%27s%20Quest%20%28Europe%29%20%28Rev%201%29.gb"
+  },
+  {
+    "name": "Kaeru no Tame ni Kane wa Naru (Japan).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Kaeru%20no%20Tame%20ni%20Kane%20wa%20Naru%20%28Japan%29.gb"
+  },
+  {
+    "name": "Operation C (USA).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Operation%20C%20%28USA%29.gb"
+  },
+  {
+    "name": "Super Mario Land (World) (Rev 1).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Super%20Mario%20Land%20%28World%29%20%28Rev%201%29.gb"
+  },
+  {
+    "name": "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Super%20Mario%20Land%202%20-%206%20Golden%20Coins%20%28USA%2C%20Europe%29%20%28Rev%202%29.gb"
+  },
+  {
+    "name": "Wario Land - Super Mario Land 3 (World).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Wario%20Land%20-%20Super%20Mario%20Land%203%20%28World%29.gb"
   },
   {
     "name": "Advance Wars.zip",
@@ -95,9 +145,49 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Yu-Gi-Oh%21%20Ultimate%20Masters%20-%20World%20Championship%20Tournament%202006.zip"
   },
   {
-    "name": ".empty",
+    "name": "Hamtaro - Ham-Hams Unite! (Europe) (En,Fr,De,Es,It).gbc",
     "console": "GBC",
-    "downloadUrl": ""
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Hamtaro%20-%20Ham-Hams%20Unite%21%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.gbc"
+  },
+  {
+    "name": "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29%20%28Rev%202%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.gbc"
+  },
+  {
+    "name": "Mega Man World 4 DX (USA).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Mega%20Man%20World%204%20DX%20%28USA%29.gbc"
+  },
+  {
+    "name": "Mega Man World 5 DX (USA).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Mega%20Man%20World%205%20DX%20%28USA%29.gbc"
+  },
+  {
+    "name": "Metal Gear Solid (Europe) (En,Fr,De,Es,It).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Metal%20Gear%20Solid%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.gbc"
+  },
+  {
+    "name": "Samurai Kid (Japan).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Samurai%20Kid%20%28Japan%29.gbc"
+  },
+  {
+    "name": "Scooby-Doo! - Classic Creep Capers (USA, Europe).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Scooby-Doo%21%20-%20Classic%20Creep%20Capers%20%28USA%2C%20Europe%29.gbc"
+  },
+  {
+    "name": "Wario Land II (USA, Europe) (SGB Enhanced) (GB Compatible).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Wario%20Land%20II%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.gbc"
+  },
+  {
+    "name": "Warlocked (USA).gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Warlocked%20%28USA%29.gbc"
   },
   {
     "name": "Super Mario 64.zip",

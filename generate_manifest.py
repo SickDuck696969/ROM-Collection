@@ -8,7 +8,7 @@ BRANCH = "master"
 
 manifest = []
 EXCLUDED_DIRS = {".git", ".github", "node_modules"}
-VALID_EXTENSIONS = {".zip", ".7z", ".nes", ".sfc", ".gba", ".n64", ".z64", ".bin"}
+VALID_EXTENSIONS = {".zip", ".7z", ".nes", ".sfc", ".gba", ".n64", ".z64", ".bin", ".gb", ".gbc"}
 
 for root, dirs, files in os.walk("."):
     dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]

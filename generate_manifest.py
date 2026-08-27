@@ -31,7 +31,10 @@ for root, dirs, files in os.walk("."):
                 "downloadUrl": download_url
             })
 
+# Sort the manifest entries alphabetically by file name (case-insensitive)
+manifest.sort(key=lambda x: (x["console"].lower(), x["name"].lower()))
+
 with open("manifest.json", "w") as f:
     json.dump(manifest, f, indent=2)
 
-print(f"Successfully generated manifest.json with {len(manifest)} items.")
+print(f"Successfully generated manifest.json with {len(manifest)} sorted items.")

@@ -5,6 +5,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/dino.zip"
   },
   {
+    "name": "neogeo.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/neogeo.zip"
+  },
+  {
     "name": "sengoku3.zip",
     "console": "Arcade",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/sengoku3.zip"

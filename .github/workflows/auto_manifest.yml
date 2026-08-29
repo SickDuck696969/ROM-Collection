@@ -19,14 +19,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Check out the repository code (Optimized for speed)
+      # 1. Check out the repository code (Super-optimized)
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Only fetch the latest commit
           fetch-depth: 1
-          # Do not download the actual file contents, only the file names/paths
           filter: 'blob:none'
+          sparse-checkout: |
+            # Only download the root level files/folders needed for the manifest script
+            # Add any specific directories your python script actually reads, or leave empty to grab only root files
+            generate_manifest.py
 
       # 2. Set up Python (skip this step if your script is a bash script or something else)
       - name: Set up Python

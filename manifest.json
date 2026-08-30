@@ -995,6 +995,16 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Banjo-Kazooie%20-%20Grunty%27s%20Revenge%20%28USA%2C%20Europe%29.zip"
   },
   {
+    "name": "Beyblade G-Revolution.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Beyblade%20G-Revolution.zip"
+  },
+  {
+    "name": "Beyblade V-Force Ultimate Blader Jam.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Beyblade%20V-Force%20Ultimate%20Blader%20Jam.zip"
+  },
+  {
     "name": "Boktai - The Sun Is in Your Hand (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Boktai%20-%20The%20Sun%20Is%20in%20Your%20Hand%20%28USA%29.zip"
@@ -1175,6 +1185,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Golden%20Sun%20-%20The%20Lost%20Age%20%28USA%2C%20Europe%29.zip"
   },
   {
+    "name": "Grand Theft Auto Advance.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Grand%20Theft%20Auto%20Advance.zip"
+  },
+  {
     "name": "GT Advance - Championship Racing (USA, Europe).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/GT%20Advance%20-%20Championship%20Racing%20%28USA%2C%20Europe%29.zip"
@@ -1183,6 +1198,11 @@
     "name": "Gunstar Super Heroes (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Gunstar%20Super%20Heroes%20%28USA%29.zip"
+  },
+  {
+    "name": "Hamtaro Ham-Ham Heartbreak.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Hamtaro%20Ham-Ham%20Heartbreak.zip"
   },
   {
     "name": "Harvest Moon - Friends of Mineral Town (USA).zip",
@@ -3810,6 +3830,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Yoshi%27s%20Story%20%28USA%29%20%28En%2CJa%29.zip"
   },
   {
+    "name": ".empty",
+    "console": "NDS",
+    "downloadUrl": ""
+  },
+  {
     "name": "8 Eyes (USA).zip",
     "console": "NES",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NES/8%20Eyes%20%28USA%29.zip"
@@ -5183,6 +5208,11 @@
     "name": "Zombie Nation (USA).zip",
     "console": "NES",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NES/Zombie%20Nation%20%28USA%29.zip"
+  },
+  {
+    "name": ".empty",
+    "console": "PSX",
+    "downloadUrl": ""
   },
   {
     "name": "ActRaiser (USA).zip",

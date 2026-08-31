@@ -1,5 +1,10 @@
 [
   {
+    "name": "1944.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/1944.zip"
+  },
+  {
     "name": "dino.zip",
     "console": "Arcade",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/dino.zip"
@@ -23,6 +28,11 @@
     "name": "pgm.zip",
     "console": "Arcade",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/pgm.zip"
+  },
+  {
+    "name": "progear.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/progear.zip"
   },
   {
     "name": "sengoku3.zip",

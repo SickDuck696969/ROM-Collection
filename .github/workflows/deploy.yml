@@ -1,0 +1,68 @@
+name: Update Manifest and Deploy Pages
+
+on:
+  push:
+    branches: ["master"]
+    paths-ignore:
+      - 'index.html'
+      - 'manifest.json'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: 'blob:none'
+
+      # 2. Setup Python & Run Script
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate Manifest
+        run: python generate_manifest.py
+
+      # 3. Commit the new manifest
+      - name: Commit manifest back to repository
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add manifest.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update manifest.json [skip ci]"
+            git push
+          fi
+
+      # 4. Prepare files for website deployment
+      - name: Prepare Website Files (Ignore ROMs)
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp manifest.json _site/
+          find . -name 'cover.png' -exec cp --parents \{\} _site/ \;
+
+      # 5. Upload and Deploy
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

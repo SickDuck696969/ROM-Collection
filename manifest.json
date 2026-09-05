@@ -50,9 +50,19 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/shocktr2.zip"
   },
   {
-    "name": ".empty",
+    "name": "The Deacon of Wounds.epub",
     "console": "eBook",
-    "downloadUrl": ""
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/eBook/The%20Deacon%20of%20Wounds.epub"
+  },
+  {
+    "name": "The Emperor's Gift.epub",
+    "console": "eBook",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/eBook/The%20Emperor%27s%20Gift.epub"
+  },
+  {
+    "name": "Word Bearers Omnibus (Dark Apostle Dark Disciple Dark Creed Torment) - by Reynolds, Anthony (z-lib.org).epub",
+    "console": "eBook",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/eBook/Word%20Bearers%20Omnibus%20%28Dark%20Apostle%20Dark%20Disciple%20Dark%20Creed%20Torment%29%20-%20by%20Reynolds%2C%20Anthony%20%28z-lib.org%29.epub"
   },
   {
     "name": "Arena (USA, Europe).zip",
@@ -3855,6 +3865,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Yoshi%27s%20Story%20%28USA%29%20%28En%2CJa%29.zip"
   },
   {
+    "name": ".empty",
+    "console": "NDS",
+    "downloadUrl": ""
+  },
+  {
     "name": "8 Eyes (USA).zip",
     "console": "NES",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NES/8%20Eyes%20%28USA%29.zip"
@@ -5228,6 +5243,11 @@
     "name": "Zombie Nation (USA).zip",
     "console": "NES",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NES/Zombie%20Nation%20%28USA%29.zip"
+  },
+  {
+    "name": ".empty",
+    "console": "PSX",
+    "downloadUrl": ""
   },
   {
     "name": "ActRaiser (USA).zip",

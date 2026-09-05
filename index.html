@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROM Collection</title>
+    <style>
+        :root {
+            --bg-color: #0a0f14;
+            --container-bg: #141e28;
+            --text-main: #dcdcdc;
+            --accent-cyan: #32c8ff;
+            --accent-pink: #ff3296;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: var(--accent-cyan);
+            border-bottom: 2px solid var(--accent-pink);
+            padding-bottom: 10px;
+        }
+        .console-section {
+            background-color: var(--container-bg);
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2a3a4a;
+        }
+        .console-header {
+            background-color: #1c2a38;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            color: var(--accent-pink);
+            margin: 0;
+        }
+        .rom-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rom-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            border-top: 1px solid #2a3a4a;
+            transition: background-color 0.2s;
+        }
+        .rom-item:hover {
+            background-color: #1e2d3d;
+        }
+        .download-btn {
+            background-color: var(--accent-cyan);
+            color: #000;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .download-btn:hover {
+            background-color: #2bb0e0;
+            transform: scale(1.05);
+        }
+        .loading {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 50px;
+            color: var(--accent-cyan);
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>My ROM Collection</h1>
+    <div id="loading" class="loading">Fetching Database...</div>
+    <div id="content"></div>
+</div>
+
+<script>
+    // Point this to your generated manifest in the other repo
+    const MANIFEST_URL = "./manifest.json";
+
+    async function loadROMs() {
+        try {
+            const response = await fetch(MANIFEST_URL);
+            const data = await response.json();
+            
+            const contentDiv = document.getElementById('content');
+            document.getElementById('loading').style.display = 'none';
+
+            // Group the flat manifest array into an object by console
+            const consoles = {};
+            data.forEach(item => {
+                if (!consoles[item.console]) {
+                    consoles[item.console] = [];
+                }
+                // Ignore the empty dummy files you use for folder detection
+                if (item.name !== ".empty" && item.downloadUrl) {
+                    consoles[item.console].push(item);
+                }
+            });
+
+            // Generate HTML for each console
+            for (const [consoleName, games] of Object.entries(consoles)) {
+                if (games.length === 0) continue;
+
+                const section = document.createElement('div');
+                section.className = 'console-section';
+
+                const header = document.createElement('h2');
+                header.className = 'console-header';
+                header.textContent = consoleName;
+                section.appendChild(header);
+
+                const list = document.createElement('ul');
+                list.className = 'rom-list';
+
+                games.forEach(game => {
+                    const li = document.createElement('li');
+                    li.className = 'rom-item';
+                    
+                    const nameSpan = document.createElement('span');
+                    nameSpan.textContent = game.name;
+                    
+                    const dlBtn = document.createElement('a');
+                    dlBtn.className = 'download-btn';
+                    dlBtn.href = game.downloadUrl;
+                    dlBtn.textContent = 'Download';
+                    // Force the link to download rather than navigate
+                    dlBtn.setAttribute('download', ''); 
+                    
+                    li.appendChild(nameSpan);
+                    li.appendChild(dlBtn);
+                    list.appendChild(li);
+                });
+
+                section.appendChild(list);
+                contentDiv.appendChild(section);
+            }
+            
+        } catch (error) {
+            document.getElementById('loading').textContent = "Failed to load ROM database.";
+            console.error("Error fetching manifest:", error);
+        }
+    }
+
+    // Run the fetch on page load
+    loadROMs();
+</script>
+
+</body>
+</html>

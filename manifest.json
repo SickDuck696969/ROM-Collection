@@ -50,6 +50,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Arcade/shocktr2.zip"
   },
   {
+    "name": ".empty",
+    "console": "eBook",
+    "downloadUrl": ""
+  },
+  {
     "name": "Arena (USA, Europe).zip",
     "console": "Game Gear",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Game%20Gear/Arena%20%28USA%2C%20Europe%29.zip"

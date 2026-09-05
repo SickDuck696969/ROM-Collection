@@ -8,7 +8,7 @@ REPO_NAME = "ROM-Collection"
 BRANCH = "master"
 
 manifest = []
-VALID_EXTENSIONS = {".zip", ".7z", ".nes", ".sfc", ".gba", ".n64", ".z64", ".bin", ".gb", ".gbc", ".epub", ".pdf"}
+VALID_EXTENSIONS = {".zip", ".7z", ".nes", ".sfc", ".gba", ".n64", ".z64", ".bin", ".gb", ".gbc", ".epub", ".pdf", ".mp3"}
 
 # Ask Git directly for the repository structure instead of scanning the hard drive
 result = subprocess.run(['git', 'ls-tree', '-r', '--name-only', 'HEAD'], capture_output=True, text=True)

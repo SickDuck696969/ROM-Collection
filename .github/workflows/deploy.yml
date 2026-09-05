@@ -4,7 +4,6 @@ on:
   push:
     branches: ["master"]
     paths-ignore:
-      - 'index.html'
       - 'manifest.json'
       - '.github/workflows/**'
   workflow_dispatch:

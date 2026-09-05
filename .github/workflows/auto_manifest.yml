@@ -8,7 +8,7 @@ on:
     # Ignore pushes that only change the manifest or the workflow itself to prevent infinite loops
     paths-ignore:
       - 'manifest.json'
-      - 'index.html
+      - 'index.html'
       - '.github/workflows/**'
 
 # Grant permission for the action to push code back to your repo

@@ -6,59 +6,206 @@
     <title>ROM Collection</title>
     <style>
         :root {
-            --bg-color: #0a0f14;
-            --container-bg: #141e28;
+            --bg-dark: #0a0f14;
+            --bg-panel: #141e28;
+            --bg-hover: #1e2d3d;
             --text-main: #dcdcdc;
             --accent-cyan: #32c8ff;
             --accent-pink: #ff3296;
+            --accent-green: #32ff64;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
+            background-color: var(--bg-dark);
             color: var(--text-main);
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            overflow-y: scroll;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        h1 {
-            text-align: center;
-            color: var(--accent-cyan);
+
+        /* --- Header / Navigation --- */
+        header {
+            background-color: var(--bg-panel);
             border-bottom: 2px solid var(--accent-pink);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .brand h1 {
+            margin: 0;
+            color: var(--accent-cyan);
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .search-container {
+            flex-grow: 1;
+            max-width: 400px;
+            margin: 0 20px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-cyan);
+            background-color: var(--bg-dark);
+            color: white;
+            font-size: 1em;
+            outline: none;
+            transition: box-shadow 0.2s;
+        }
+
+        #searchInput:focus {
+            box-shadow: 0 0 8px var(--accent-cyan);
+        }
+
+        .download-app-btn {
+            background-color: var(--accent-green);
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .download-app-btn:hover {
+            transform: scale(1.05);
+            background-color: #5aff82;
+        }
+
+        /* --- Main Content Area --- */
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #2a3a4a;
             padding-bottom: 10px;
         }
-        .console-section {
-            background-color: var(--container-bg);
-            margin-top: 20px;
-            border-radius: 8px;
+
+        .back-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent-pink);
+            color: var(--accent-pink);
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+            display: none; /* Hidden by default */
+        }
+
+        .back-btn:hover {
+            background-color: var(--accent-pink);
+            color: #000;
+        }
+
+        /* --- Console Grid --- */
+        .console-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .console-card {
+            background-color: var(--bg-panel);
+            border-radius: 10px;
             overflow: hidden;
             border: 1px solid #2a3a4a;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
         }
-        .console-header {
-            background-color: #1c2a38;
-            padding: 15px 20px;
-            font-size: 1.5em;
-            color: var(--accent-pink);
+
+        .console-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 8px 20px rgba(50, 200, 255, 0.2);
+        }
+
+        .console-cover {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            background-color: #111;
+            border-bottom: 2px solid #2a3a4a;
+        }
+
+        .console-title {
+            padding: 15px 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--text-main);
             margin: 0;
         }
-        .rom-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+
+        /* --- ROM List --- */
+        .rom-list-container {
+            display: none; /* Hidden by default */
+            background-color: var(--bg-panel);
+            border-radius: 8px;
+            border: 1px solid #2a3a4a;
+            overflow: hidden;
         }
+
         .rom-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 20px;
-            border-top: 1px solid #2a3a4a;
+            padding: 15px 20px;
+            border-bottom: 1px solid #2a3a4a;
             transition: background-color 0.2s;
         }
-        .rom-item:hover {
-            background-color: #1e2d3d;
+
+        .rom-item:last-child {
+            border-bottom: none;
         }
+
+        .rom-item:hover {
+            background-color: var(--bg-hover);
+        }
+        
+        .rom-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rom-name {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .rom-console-badge {
+            font-size: 0.8em;
+            color: var(--accent-cyan);
+            margin-top: 4px;
+        }
+
         .download-btn {
             background-color: var(--accent-cyan);
             color: #000;
@@ -69,97 +216,202 @@
             font-size: 0.9em;
             transition: background-color 0.2s, transform 0.1s;
         }
+
         .download-btn:hover {
             background-color: #2bb0e0;
             transform: scale(1.05);
         }
-        .loading {
+
+        .empty-state {
             text-align: center;
+            padding: 50px;
+            color: var(--accent-pink);
             font-size: 1.2em;
-            margin-top: 50px;
-            color: var(--accent-cyan);
+        }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .search-container { max-width: 100%; margin: 10px 0; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>My ROM Collection</h1>
-    <div id="loading" class="loading">Fetching Database...</div>
-    <div id="content"></div>
-</div>
+    <header>
+        <div class="brand">
+            <h1 onclick="goHome()">🎮 ROM Collection</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search games across all consoles...">
+        </div>
+        <a class="download-app-btn" href="https://github.com/SickDuck696969/ROM-Collection/releases/download/v1.0/ROM_Downloader.nro">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Switch App
+        </a>
+    </header>
 
-<script>
-    // Point this to your generated manifest in the other repo
-    const MANIFEST_URL = "./manifest.json";
+    <main>
+        <div class="section-header">
+            <h2 id="viewTitle">Select a Console</h2>
+            <button id="backBtn" class="back-btn" onclick="goHome()">← Back to Consoles</button>
+        </div>
 
-    async function loadROMs() {
-        try {
-            const response = await fetch(MANIFEST_URL);
-            const data = await response.json();
-            
-            const contentDiv = document.getElementById('content');
-            document.getElementById('loading').style.display = 'none';
+        <!-- Grid View for Consoles -->
+        <div id="consoleGrid" class="console-grid">
+            <div class="empty-state">Loading Database...</div>
+        </div>
 
-            // Group the flat manifest array into an object by console
-            const consoles = {};
-            data.forEach(item => {
-                if (!consoles[item.console]) {
-                    consoles[item.console] = [];
-                }
-                // Ignore the empty dummy files you use for folder detection
-                if (item.name !== ".empty" && item.downloadUrl) {
-                    consoles[item.console].push(item);
-                }
-            });
+        <!-- List View for ROMs (and Search Results) -->
+        <div id="romListContainer" class="rom-list-container">
+            <!-- ROM items injected here via JS -->
+        </div>
+    </main>
 
-            // Generate HTML for each console
-            for (const [consoleName, games] of Object.entries(consoles)) {
-                if (games.length === 0) continue;
+    <script>
+        const MANIFEST_URL = "./manifest.json";
+        
+        let allRoms = [];
+        let consolesMap = {};
+        
+        // DOM Elements
+        const consoleGrid = document.getElementById('consoleGrid');
+        const romListContainer = document.getElementById('romListContainer');
+        const viewTitle = document.getElementById('viewTitle');
+        const backBtn = document.getElementById('backBtn');
+        const searchInput = document.getElementById('searchInput');
 
-                const section = document.createElement('div');
-                section.className = 'console-section';
+        // State
+        let currentViewConsole = null;
 
-                const header = document.createElement('h2');
-                header.className = 'console-header';
-                header.textContent = consoleName;
-                section.appendChild(header);
-
-                const list = document.createElement('ul');
-                list.className = 'rom-list';
-
-                games.forEach(game => {
-                    const li = document.createElement('li');
-                    li.className = 'rom-item';
-                    
-                    const nameSpan = document.createElement('span');
-                    nameSpan.textContent = game.name;
-                    
-                    const dlBtn = document.createElement('a');
-                    dlBtn.className = 'download-btn';
-                    dlBtn.href = game.downloadUrl;
-                    dlBtn.textContent = 'Download';
-                    // Force the link to download rather than navigate
-                    dlBtn.setAttribute('download', ''); 
-                    
-                    li.appendChild(nameSpan);
-                    li.appendChild(dlBtn);
-                    list.appendChild(li);
+        async function init() {
+            try {
+                const response = await fetch(MANIFEST_URL);
+                const data = await response.json();
+                
+                // Parse Data
+                data.forEach(item => {
+                    if (!consolesMap[item.console]) {
+                        consolesMap[item.console] = [];
+                    }
+                    if (item.name !== ".empty" && item.downloadUrl) {
+                        consolesMap[item.console].push(item);
+                        allRoms.push(item);
+                    }
                 });
 
-                section.appendChild(list);
-                contentDiv.appendChild(section);
+                renderConsoleGrid();
+
+            } catch (error) {
+                consoleGrid.innerHTML = `<div class="empty-state">Failed to load manifest. Ensure you are viewing this on GitHub Pages.</div>`;
+                console.error("Error fetching manifest:", error);
             }
-            
-        } catch (error) {
-            document.getElementById('loading').textContent = "Failed to load ROM database.";
-            console.error("Error fetching manifest:", error);
         }
-    }
 
-    // Run the fetch on page load
-    loadROMs();
-</script>
+        function renderConsoleGrid() {
+            currentViewConsole = null;
+            viewTitle.textContent = "Select a Console";
+            backBtn.style.display = "none";
+            romListContainer.style.display = "none";
+            consoleGrid.style.display = "grid";
+            consoleGrid.innerHTML = "";
 
+            const consoleNames = Object.keys(consolesMap).sort();
+
+            consoleNames.forEach(consoleName => {
+                const gameCount = consolesMap[consoleName].length;
+                
+                // Safe URL encoding for folder paths with spaces
+                const coverUrl = `./${encodeURIComponent(consoleName)}/cover.png`;
+
+                const card = document.createElement('div');
+                card.className = 'console-card';
+                card.onclick = () => showConsoleRoms(consoleName);
+                
+                card.innerHTML = `
+                    <!-- onerror falls back to a placeholder if the folder lacks a cover.png -->
+                    <img src="${coverUrl}" class="console-cover" alt="${consoleName} cover" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/1c2a38/32c8ff?text=${encodeURIComponent(consoleName)}';">
+                    <h3 class="console-title">${consoleName} <br><span style="font-size: 0.8em; color: #888;">${gameCount} Games</span></h3>
+                `;
+                consoleGrid.appendChild(card);
+            });
+        }
+
+        function showConsoleRoms(consoleName) {
+            currentViewConsole = consoleName;
+            viewTitle.textContent = `${consoleName} ROMs`;
+            backBtn.style.display = "block";
+            consoleGrid.style.display = "none";
+            romListContainer.style.display = "block";
+            searchInput.value = ""; // Clear search when navigating
+
+            renderRomList(consolesMap[consoleName]);
+        }
+
+        function renderRomList(romArray) {
+            romListContainer.innerHTML = "";
+
+            if (romArray.length === 0) {
+                romListContainer.innerHTML = `<div class="empty-state">No ROMs found.</div>`;
+                return;
+            }
+
+            romArray.forEach(game => {
+                const item = document.createElement('div');
+                item.className = 'rom-item';
+                item.innerHTML = `
+                    <div class="rom-info">
+                        <span class="rom-name">${game.name}</span>
+                        ${!currentViewConsole ? `<span class="rom-console-badge">${game.console}</span>` : ''}
+                    </div>
+                    <a class="download-btn" href="${game.downloadUrl}" download>Download</a>
+                `;
+                romListContainer.appendChild(item);
+            });
+        }
+
+        function goHome() {
+            searchInput.value = "";
+            renderConsoleGrid();
+        }
+
+        // Search Functionality
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            
+            if (!query) {
+                // If search is cleared, go back to previous view
+                if (currentViewConsole) {
+                    showConsoleRoms(currentViewConsole);
+                } else {
+                    renderConsoleGrid();
+                }
+                return;
+            }
+
+            // Global search overrides current view
+            viewTitle.textContent = `Search Results: "${query}"`;
+            backBtn.style.display = "block";
+            consoleGrid.style.display = "none";
+            romListContainer.style.display = "block";
+
+            // If we are currently looking at a specific console, search only that console. 
+            // Otherwise, search all ROMs globally.
+            const dataToSearch = currentViewConsole ? consolesMap[currentViewConsole] : allRoms;
+            
+            const results = dataToSearch.filter(game => 
+                game.name.toLowerCase().includes(query)
+            );
+
+            // Temporarily set currentViewConsole to null so the renderer shows the console badges for search results
+            const tempConsole = currentViewConsole;
+            currentViewConsole = null; 
+            renderRomList(results);
+            currentViewConsole = tempConsole; // Restore state
+        });
+
+        // Initialize App
+        init();
+    </script>
 </body>
 </html>

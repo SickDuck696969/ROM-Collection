@@ -52,7 +52,7 @@ jobs:
           # Check if there are actually changes to commit
           if ! git diff --staged --quiet; then
             # The [skip ci] tag prevents this commit from triggering another GitHub Action run
-            git commit -m "Auto-update manifest.json [skip ci]"
+            git commit -m "Auto-update manifest.json"
             git push
           else
             echo "No changes to manifest.json"

@@ -27,10 +27,6 @@ jobs:
         with:
           fetch-depth: 1
           filter: 'blob:none'
-          sparse-checkout: |
-            index.html
-            manifest.json
-            **/cover.png
 
       # 2. Setup Python & Run Script
       - name: Set up Python

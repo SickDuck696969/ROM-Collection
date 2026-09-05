@@ -345,6 +345,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Bugs%20Bunny%20Crazy%20Castle%2C%20The%20%28USA%2C%20Europe%29.zip"
   },
   {
+    "name": "Burger Time Deluxe (Color v1.0).gb",
+    "console": "GB",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Burger%20Time%20Deluxe%20%28Color%20v1.0%29.gb"
+  },
+  {
     "name": "Castlevania - The Adventure (USA).zip",
     "console": "GB",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GB/Castlevania%20-%20The%20Adventure%20%28USA%29.zip"
@@ -2228,6 +2233,11 @@
     "name": "Pokemon Puzzle Challenge (USA, Australia).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Pokemon%20Puzzle%20Challenge%20%28USA%2C%20Australia%29.zip"
+  },
+  {
+    "name": "Pokemon TCG Neo.gbc",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Pokemon%20TCG%20Neo.gbc"
   },
   {
     "name": "Pokemon Trading Card Game (USA, Australia) (SGB Enhanced) (GB Compatible).zip",

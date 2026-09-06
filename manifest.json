@@ -3380,9 +3380,14 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Master%20System/Zillion%20II%20-%20The%20Tri%20Formation%20%28World%29.zip"
   },
   {
-    "name": ".empty",
+    "name": "10th Symphony Type_Moon.mp3",
     "console": "Music",
-    "downloadUrl": ""
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Music/10th%20Symphony%20Type_Moon.mp3"
+  },
+  {
+    "name": "DAMIDAMI.mp3",
+    "console": "Music",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Music/DAMIDAMI.mp3"
   },
   {
     "name": "007 - The World Is Not Enough (USA).zip",

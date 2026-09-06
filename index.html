@@ -4,41 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROM Collection</title>
+    <!-- Retro Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --bg-dark: #070a0f;
-            --bg-panel: #111a24;
-            --bg-hover: #1a2736;
-            --text-main: #e8e8e8;
-            --text-muted: #8b9bb4;
-            --accent-cyan: #32c8ff;
-            --accent-pink: #ff3296;
+            --bg-dark: #0a0a0a;
+            --bg-panel: #141414;
+            --bg-hover: #1e1e1e;
+            --text-main: #32ff64; /* Terminal Green */
+            --text-muted: #228b3d;
+            --accent-cyan: #00ffff;
+            --accent-pink: #ff00ff;
             --accent-green: #32ff64;
-            --gradient-primary: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+            --border-width: 3px;
         }
 
-        /* --- Custom Scrollbar --- */
-        /* --- Custom Scrollbar --- */
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: var(--bg-dark); }
-        ::-webkit-scrollbar-thumb { background: #2a3a4a; border-radius: 5px; }
+        /* --- Global Resets & CRT Effect --- */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* CRT Scanline Overlay */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); border-left: 2px solid var(--text-muted); }
+        ::-webkit-scrollbar-thumb { background: var(--text-main); }
         ::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: 'VT323', monospace;
             background-color: var(--bg-dark);
             color: var(--text-main);
             margin: 0;
             padding: 0;
             overflow-y: scroll;
+            font-size: 1.2rem;
+            text-shadow: 0 0 5px rgba(50, 255, 100, 0.3);
         }
 
         /* --- Header / Navigation --- */
         header {
-            background-color: rgba(17, 26, 36, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 50, 150, 0.3);
+            background-color: var(--bg-dark);
+            border-bottom: var(--border-width) solid var(--accent-pink);
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
@@ -48,72 +68,72 @@
             z-index: 100;
             flex-wrap: wrap;
             gap: 15px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 0px rgba(255, 0, 255, 0.3);
         }
 
         .brand h1 {
             margin: 0;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 1.6em;
+            font-family: 'Press Start 2P', monospace;
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
             cursor: pointer;
-            font-weight: 800;
+            text-shadow: 3px 3px 0px var(--accent-pink);
         }
 
         .search-container {
             flex-grow: 1;
-            max-width: 450px;
+            max-width: 500px;
             margin: 0 20px;
         }
 
         #searchInput {
             width: 100%;
-            padding: 12px 20px;
-            border-radius: 25px;
-            border: 1px solid rgba(50, 200, 255, 0.3);
-            background-color: rgba(0, 0, 0, 0.3);
-            color: white;
-            font-size: 1em;
+            padding: 12px 15px;
+            border: var(--border-width) solid var(--text-main);
+            background-color: #000;
+            color: var(--text-main);
+            font-family: 'VT323', monospace;
+            font-size: 1.3rem;
             outline: none;
-            transition: all 0.3s ease;
+            text-transform: uppercase;
         }
 
         #searchInput::placeholder { color: var(--text-muted); }
         #searchInput:focus {
             border-color: var(--accent-cyan);
-            box-shadow: 0 0 15px rgba(50, 200, 255, 0.2);
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #051414;
+            box-shadow: inset 0 0 10px var(--accent-cyan);
         }
 
         .download-app-btn {
-            background-color: var(--accent-green);
-            color: #05140a;
+            background-color: #000;
+            color: var(--accent-pink);
+            border: var(--border-width) solid var(--accent-pink);
             text-decoration: none;
-            padding: 10px 22px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 0.9em;
+            padding: 10px 20px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7rem;
             display: flex;
             align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 15px rgba(50, 255, 100, 0.2);
+            gap: 10px;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px var(--accent-pink);
+            transition: all 0.1s;
         }
 
         .download-app-btn:hover {
-            transform: translateY(-2px);
-            background-color: #5aff82;
-            box-shadow: 0 6px 20px rgba(50, 255, 100, 0.4);
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px var(--accent-pink);
+            background-color: var(--accent-pink);
+            color: #000;
         }
 
         /* --- Main Content Area --- */
         main {
             max-width: 1300px;
             margin: 40px auto;
-            padding: 0 25px;
+            padding: 0 20px;
         }
 
         .section-header {
@@ -121,126 +141,122 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: var(--border-width) dashed var(--text-muted);
             padding-bottom: 12px;
         }
 
         .section-header h2 {
             margin: 0;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.1rem;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
         }
 
         .other-header {
-            margin-top: 60px; /* spacing above the 'Other' section */
+            margin-top: 60px;
         }
 
         .back-btn {
-            background-color: transparent;
-            border: 1px solid var(--accent-pink);
-            color: var(--accent-pink);
-            padding: 8px 16px;
-            border-radius: 6px;
+            background-color: #000;
+            border: var(--border-width) solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            padding: 10px 15px;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
             cursor: pointer;
-            font-weight: 600;
-            transition: all 0.2s;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 0px var(--accent-cyan);
             display: none;
         }
 
         .back-btn:hover {
-            background-color: var(--accent-pink);
-            color: #fff;
-            box-shadow: 0 0 15px rgba(255, 50, 150, 0.4);
+            background-color: var(--accent-cyan);
+            color: #000;
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0px var(--accent-cyan);
         }
 
         /* --- Grid System --- */
         .console-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
         }
 
         .console-card {
-            background-color: var(--bg-panel);
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.05);
+            background-color: #000;
+            border: var(--border-width) solid var(--text-main);
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             display: flex;
             flex-direction: column;
             position: relative;
-        }
-
-        /* Cool border gradient hover effect */
-        .console-card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            border-radius: 14px;
-            padding: 2px;
-            background: var(--gradient-primary);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            box-shadow: 6px 6px 0px var(--text-muted);
+            transition: all 0.1s;
         }
 
         .console-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px var(--accent-pink);
+            border-color: var(--accent-pink);
         }
-
-        .console-card:hover::before { opacity: 1; }
 
         .console-cover {
             width: 100%;
             aspect-ratio: 1 / 1;
             object-fit: cover;
-            background-color: #0c1219;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: var(--border-width) solid var(--text-main);
+            filter: contrast(120%) grayscale(20%);
+        }
+        
+        .console-card:hover .console-cover {
+            border-bottom-color: var(--accent-pink);
+            filter: none;
         }
 
         .card-content {
-            padding: 20px 15px;
+            padding: 15px;
             text-align: center;
         }
 
         .console-title {
-            font-weight: 700;
-            font-size: 1.2em;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.8rem;
             color: var(--text-main);
-            margin: 0 0 8px 0;
+            margin: 0 0 12px 0;
+            line-height: 1.4;
         }
+        
+        .console-card:hover .console-title { color: var(--accent-pink); }
 
         .item-count {
-            font-size: 0.85em;
-            color: var(--accent-cyan);
-            background-color: rgba(50, 200, 255, 0.1);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            font-size: 1.2rem;
+            color: #000;
+            background-color: var(--text-main);
+            padding: 2px 8px;
+            text-transform: uppercase;
+        }
+
+        .console-card:hover .item-count {
+            background-color: var(--accent-pink);
         }
 
         /* --- ROM List --- */
         .rom-list-container {
             display: none;
-            background-color: var(--bg-panel);
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.05);
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            background-color: #000;
+            border: var(--border-width) solid var(--text-main);
+            box-shadow: 8px 8px 0px var(--text-muted);
         }
 
         .rom-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px 25px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            transition: background-color 0.2s;
+            padding: 15px 20px;
+            border-bottom: 2px dashed var(--text-muted);
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .rom-item:last-child { border-bottom: none; }
@@ -249,51 +265,87 @@
         .rom-info {
             display: flex;
             flex-direction: column;
+            flex-grow: 1;
         }
 
         .rom-name {
-            font-size: 1.1em;
-            font-weight: 600;
+            font-size: 1.4rem;
+            text-transform: uppercase;
         }
 
         .rom-console-badge {
-            font-size: 0.8em;
-            color: var(--text-muted);
-            margin-top: 6px;
+            font-size: 1rem;
+            color: var(--accent-cyan);
+            margin-top: 4px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .download-btn {
-            background-color: transparent;
-            color: var(--accent-cyan);
-            border: 1px solid var(--accent-cyan);
+            background-color: var(--text-main);
+            color: #000;
             text-decoration: none;
-            padding: 8px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.9em;
-            transition: all 0.2s ease;
+            padding: 8px 15px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 0px var(--text-muted);
+            transition: all 0.1s;
         }
 
         .download-btn:hover {
             background-color: var(--accent-cyan);
-            color: #000;
-            box-shadow: 0 0 15px rgba(50, 200, 255, 0.3);
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0px var(--text-muted);
         }
 
         .empty-state {
             text-align: center;
             padding: 60px;
-            color: var(--text-muted);
-            font-size: 1.2em;
+            color: var(--accent-pink);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1rem;
             grid-column: 1 / -1;
+            animation: blink 1s step-end infinite;
         }
 
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* --- Mobile Responsiveness --- */
         @media (max-width: 700px) {
-            header { flex-direction: column; text-align: center; padding: 15px; }
-            .search-container { max-width: 100%; margin: 12px 0; }
-            .console-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px;}
+            header { 
+                flex-direction: column; 
+                text-align: center; 
+                padding: 15px; 
+            }
+            .brand h1 { font-size: 1rem; }
+            .search-container { 
+                max-width: 100%; 
+                margin: 10px 0; 
+                width: 100%;
+            }
+            .download-app-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 12px;
+            }
+            .console-grid { 
+                /* Shrinks cards on mobile so 2 can fit side-by-side */
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+                gap: 15px;
+            }
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .back-btn { width: 100%; }
+            .rom-name { font-size: 1.2rem; }
+            .download-btn {
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -301,32 +353,32 @@
 
     <header>
         <div class="brand">
-            <h1 onclick="goHome()">ROM Collection</h1>
+            <h1 onclick="goHome()">> ROM Collection_</h1>
         </div>
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search games, books, or music...">
+            <input type="text" id="searchInput" placeholder="C:\SEARCH_DATABASE...">
         </div>
         <a class="download-app-btn" href="https://github.com/SickDuck696969/ROM_Downloader/releases/download/v1.0/ROM_Downloader.nro">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Switch App
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"><path d="M21 15v4H3v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            SWITCH_APP.EXE
         </a>
     </header>
 
     <main>
         <!-- Main Header -->
         <div class="section-header" id="mainHeaderWrapper">
-            <h2 id="viewTitle">Select a Console</h2>
-            <button id="backBtn" class="back-btn" onclick="goHome()">← Back to Categories</button>
+            <h2 id="viewTitle">Select_Console</h2>
+            <button id="backBtn" class="back-btn" onclick="goHome()">< RETURN</button>
         </div>
 
         <!-- Grid View for Consoles -->
         <div id="consoleGrid" class="console-grid">
-            <div class="empty-state">Loading Database...</div>
+            <div class="empty-state">LOADING_DATABASE...</div>
         </div>
 
         <!-- Header for Other (eBook, Music) -->
         <div class="section-header other-header" id="otherHeaderWrapper" style="display: none;">
-            <h2>Other Media</h2>
+            <h2>Other_Media</h2>
         </div>
 
         <!-- Grid View for Other Media -->
@@ -377,7 +429,7 @@
                 renderGrids();
 
             } catch (error) {
-                consoleGrid.innerHTML = `<div class="empty-state">Failed to load manifest. Ensure you are viewing this on GitHub Pages.</div>`;
+                consoleGrid.innerHTML = `<div class="empty-state">ERROR: MANIFEST_NOT_FOUND</div>`;
                 console.error("Error fetching manifest:", error);
             }
         }
@@ -403,7 +455,7 @@
 
         function renderGrids() {
             currentViewConsole = null;
-            viewTitle.textContent = "Select a Console";
+            viewTitle.textContent = "Select_Console";
             backBtn.style.display = "none";
             romListContainer.style.display = "none";
             
@@ -419,7 +471,7 @@
 
             // Render Main Consoles
             mainConsoles.forEach(consoleName => {
-                const card = createCardHtml(consoleName, 'Games');
+                const card = createCardHtml(consoleName, 'FILES');
                 consoleGrid.appendChild(card);
             });
 
@@ -429,8 +481,7 @@
                 otherGrid.style.display = "grid";
                 
                 otherCategories.forEach(categoryName => {
-                    // Logic to label eBook and Music correctly
-                    const label = categoryName === 'eBook' ? 'Books' : 'Songs';
+                    const label = categoryName === 'eBook' ? 'BOOKS' : 'TRACKS';
                     const card = createCardHtml(categoryName, label);
                     otherGrid.appendChild(card);
                 });
@@ -445,11 +496,11 @@
             
             // Adjust the view title based on what they clicked
             if (categoryName === 'eBook') {
-                viewTitle.textContent = `Library: eBooks`;
+                viewTitle.textContent = `DIR: EBOOKS`;
             } else if (categoryName === 'Music') {
-                viewTitle.textContent = `Library: Music`;
+                viewTitle.textContent = `DIR: MUSIC`;
             } else {
-                viewTitle.textContent = `${categoryName} ROMs`;
+                viewTitle.textContent = `DIR: ${categoryName}`;
             }
 
             backBtn.style.display = "block";
@@ -470,7 +521,7 @@
             romListContainer.innerHTML = "";
 
             if (itemArray.length === 0) {
-                romListContainer.innerHTML = `<div class="empty-state">No files found.</div>`;
+                romListContainer.innerHTML = `<div class="empty-state">NO_FILES_FOUND</div>`;
                 return;
             }
 
@@ -480,9 +531,9 @@
                 row.innerHTML = `
                     <div class="rom-info">
                         <span class="rom-name">${item.name}</span>
-                        ${!currentViewConsole ? `<span class="rom-console-badge">${item.console}</span>` : ''}
+                        ${!currentViewConsole ? `<span class="rom-console-badge">[${item.console}]</span>` : ''}
                     </div>
-                    <a class="download-btn" href="${item.downloadUrl}" download>Download</a>
+                    <a class="download-btn" href="${item.downloadUrl}" download>DOWNLOAD</a>
                 `;
                 romListContainer.appendChild(row);
             });
@@ -504,7 +555,7 @@
             }
 
             // Global search overrides current view
-            viewTitle.textContent = `Search Results: "${query}"`;
+            viewTitle.textContent = `QUERY: "${query}"`;
             backBtn.style.display = "block";
             
             // Hide Grids

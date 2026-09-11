@@ -1920,6 +1920,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Zone%20of%20the%20Enders%20-%20The%20Fist%20of%20Mars%20%28USA%29.zip"
   },
   {
+    "name": "Aladdin.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Aladdin.zip"
+  },
+  {
     "name": "Aliens - Thanatos Encounter (USA, Europe).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Aliens%20-%20Thanatos%20Encounter%20%28USA%2C%20Europe%29.zip"
@@ -2090,6 +2095,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Gen%20the%20Carpenter%20%28Japan%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29%20%5BT-En%20by%20PentarouZero%20v1.0%5D%20%5Bn%5D.zip"
   },
   {
+    "name": "Grand Theft Auto 2.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Grand%20Theft%20Auto%202.zip"
+  },
+  {
     "name": "Grandia - Parallel Trippers (Japan) [T-En by Adventurous Translations v1.03].zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Grandia%20-%20Parallel%20Trippers%20%28Japan%29%20%5BT-En%20by%20Adventurous%20Translations%20v1.03%5D.zip"
@@ -2255,6 +2265,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Mr.%20Driller%20%28USA%29.zip"
   },
   {
+    "name": "Perfect Dark.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Perfect%20Dark.zip"
+  },
+  {
     "name": "Pocket Bomberman (USA, Europe) (SGB Enhanced) (GB Compatible).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Pocket%20Bomberman%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.zip"
@@ -2345,6 +2360,26 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Shin%20Megami%20Tensei%20Devil%20Children%20-%20Kuro%20no%20Sho%20%28Japan%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29%20%5BT-En%20by%20Higsby%20%26%20SpecialAgentApe%20v1.2%5D.zip"
   },
   {
+    "name": "Simpsons, The Night of the Living Treehouse of Horror.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Simpsons%2C%20The%20Night%20of%20the%20Living%20Treehouse%20of%20Horror.zip"
+  },
+  {
+    "name": "Spider-Man 2 The Sinister Six.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Spider-Man%202%20The%20Sinister%20Six.zip"
+  },
+  {
+    "name": "Spider-Man.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Spider-Man.zip"
+  },
+  {
+    "name": "SpongeBob SquarePants Legend of the Lost Spatula.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/SpongeBob%20SquarePants%20Legend%20of%20the%20Lost%20Spatula.zip"
+  },
+  {
     "name": "Super Mario Bros. Deluxe (USA, Europe) (Rev 2).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Super%20Mario%20Bros.%20Deluxe%20%28USA%2C%20Europe%29%20%28Rev%202%29.zip"
@@ -2423,6 +2458,11 @@
     "name": "Wendy - Every Witch Way (USA, Europe).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Wendy%20-%20Every%20Witch%20Way%20%28USA%2C%20Europe%29.zip"
+  },
+  {
+    "name": "Worms Armageddon.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Worms%20Armageddon.zip"
   },
   {
     "name": "Yu-Gi-Oh! - Dark Duel Stories (USA).zip",

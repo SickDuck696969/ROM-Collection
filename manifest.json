@@ -1105,6 +1105,16 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Boktai%202%20-%20Solar%20Boy%20Django%20%28USA%29.zip"
   },
   {
+    "name": "Breath of Fire (USA).zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Breath%20of%20Fire%20%28USA%29.zip"
+  },
+  {
+    "name": "Breath of Fire II.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Breath%20of%20Fire%20II.zip"
+  },
+  {
     "name": "Broken Sword - The Shadow of the Templars (USA) (En,Fr,De,Es,It).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Broken%20Sword%20-%20The%20Shadow%20of%20the%20Templars%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.zip"
@@ -1605,6 +1615,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Pokemon%20Unbound%20%28v2.1.1.1%29.zip"
   },
   {
+    "name": "Power Rangers S.P.D..zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Power%20Rangers%20S.P.D..zip"
+  },
+  {
     "name": "Puyo Pop (USA) (En,Ja).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Puyo%20Pop%20%28USA%29%20%28En%2CJa%29.zip"
@@ -1638,6 +1653,16 @@
     "name": "Sabre Wulf (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Sabre%20Wulf%20%28USA%29.zip"
+  },
+  {
+    "name": "Shining Soul II.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Shining%20Soul%20II.zip"
+  },
+  {
+    "name": "Shining Soul.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Shining%20Soul.zip"
   },
   {
     "name": "Silent Scope (USA) (En,Fr,De,Es,It).zip",
@@ -1913,6 +1938,11 @@
     "name": "Yu-Gi-Oh! GX - Duel Academy (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Yu-Gi-Oh%21%20GX%20-%20Duel%20Academy%20%28USA%29.zip"
+  },
+  {
+    "name": "Zoids Legacy.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Zoids%20Legacy.zip"
   },
   {
     "name": "Zone of the Enders - The Fist of Mars (USA).zip",

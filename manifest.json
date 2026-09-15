@@ -5900,6 +5900,16 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Yoshi%27s%20Story%20%28USA%29%20%28En%2CJa%29.zip"
   },
   {
+    "name": "Digimon World Dawn.zip",
+    "console": "NDS",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20Dawn.zip"
+  },
+  {
+    "name": "Digimon World DS (USA).zip",
+    "console": "NDS",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20DS%20%28USA%29.zip"
+  },
+  {
     "name": "Mario Kart DS.zip",
     "console": "NDS",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Mario%20Kart%20DS.zip"
@@ -5908,6 +5918,11 @@
     "name": "New Super Mario Bros..zip",
     "console": "NDS",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/New%20Super%20Mario%20Bros..zip"
+  },
+  {
+    "name": "Pokemon HeartGold Version.zip",
+    "console": "NDS",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20HeartGold%20Version.zip"
   },
   {
     "name": "Super Mario 64 DS.zip",

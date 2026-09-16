@@ -5935,6 +5935,11 @@
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Chrono%20Trigger.zip"
   },
   {
+    "name": "Digimon Story - Lost Evolution.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Digimon%20Story%20-%20Lost%20Evolution.zip"
+  },
+  {
     "name": "Digimon World Dawn.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20Dawn.zip"
@@ -5948,6 +5953,21 @@
     "name": "Grand Theft Auto - Chinatown Wars.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Grand%20Theft%20Auto%20-%20Chinatown%20Wars.zip"
+  },
+  {
+    "name": "Kirby Super Star Ultra.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Kirby%20Super%20Star%20Ultra.zip"
+  },
+  {
+    "name": "LEGO Batman 2 - DC Super Heroes (USA) (En,Fr,Es,Pt).zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/LEGO%20Batman%202%20-%20DC%20Super%20Heroes%20%28USA%29%20%28En%2CFr%2CEs%2CPt%29.zip"
+  },
+  {
+    "name": "LEGO Batman The Videogame.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/LEGO%20Batman%20The%20Videogame.zip"
   },
   {
     "name": "Mario & Luigi - Bowser's Inside Story.zip",
@@ -5970,6 +5990,11 @@
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/New%20Super%20Mario%20Bros..zip"
   },
   {
+    "name": "Pokemon - Platinum Version (USA) (Rev 1).zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20-%20Platinum%20Version%20%28USA%29%20%28Rev%201%29.zip"
+  },
+  {
     "name": "Pokemon Conquest.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Conquest.zip"
@@ -5983,6 +6008,16 @@
     "name": "Pokemon Mystery Dungeon - Explorers of Sky.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Mystery%20Dungeon%20-%20Explorers%20of%20Sky.zip"
+  },
+  {
+    "name": "Pokemon Ranger.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Ranger.zip"
+  },
+  {
+    "name": "Pokemon White Version.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20White%20Version.zip"
   },
   {
     "name": "Sonic Chronicles - The Dark Brotherhood.zip",
@@ -6008,6 +6043,11 @@
     "name": "The Legend of Zelda - Phantom Hourglass.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/The%20Legend%20of%20Zelda%20-%20Phantom%20Hourglass.zip"
+  },
+  {
+    "name": "WarioWare Touched!.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/WarioWare%20Touched%21.zip"
   },
   {
     "name": "8 Eyes (USA).zip",

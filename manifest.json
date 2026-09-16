@@ -3055,6 +3055,26 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Legend%20of%20Zelda%2C%20The%20-%20Oracle%20of%20Seasons%20%28USA%2C%20Australia%29.zip"
   },
   {
+    "name": "LEGO Alpha Team.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/LEGO%20Alpha%20Team.zip"
+  },
+  {
+    "name": "LEGO Island 2 The Brickster's Revenge.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/LEGO%20Island%202%20The%20Brickster%27s%20Revenge.zip"
+  },
+  {
+    "name": "LEGO Racers.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/LEGO%20Racers.zip"
+  },
+  {
+    "name": "LEGO Stunt Rally.zip",
+    "console": "GBC",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/LEGO%20Stunt%20Rally.zip"
+  },
+  {
     "name": "Lufia - The Legend Returns (USA).zip",
     "console": "GBC",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBC/Lufia%20-%20The%20Legend%20Returns%20%28USA%29.zip"
@@ -5380,9 +5400,9 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Master%20System/Zool%20-%20Ninja%20of%20the%20%27%27Nth%27%27%20Dimension.zip"
   },
   {
-    "name": "10th Symphony Type_Moon.mp3",
+    "name": "10th Symphony TypeMoon.mp3",
     "console": "Music",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Music/10th%20Symphony%20Type_Moon.mp3"
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/Music/10th%20Symphony%20TypeMoon.mp3"
   },
   {
     "name": "Cage of Almeria.mp3",
@@ -5900,79 +5920,94 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Yoshi%27s%20Story%20%28USA%29%20%28En%2CJa%29.zip"
   },
   {
-    "name": "Advance Wars Dual Strike.zip",
+    "name": "Advance Wars - Dual Strike.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Advance%20Wars%20Dual%20Strike.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Advance%20Wars%20-%20Dual%20Strike.zip"
   },
   {
-    "name": "Animal Crossing Wild World.zip",
+    "name": "Animal Crossing - Wild World.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Animal%20Crossing%20Wild%20World.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Animal%20Crossing%20-%20Wild%20World.zip"
   },
   {
     "name": "Chrono Trigger.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Chrono%20Trigger.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Chrono%20Trigger.zip"
   },
   {
     "name": "Digimon World Dawn.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20Dawn.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20Dawn.zip"
   },
   {
     "name": "Digimon World DS.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20DS.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20DS.zip"
+  },
+  {
+    "name": "Grand Theft Auto - Chinatown Wars.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Grand%20Theft%20Auto%20-%20Chinatown%20Wars.zip"
   },
   {
     "name": "Mario & Luigi - Bowser's Inside Story.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Mario%20%26%20Luigi%20-%20Bowser%27s%20Inside%20Story.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Mario%20%26%20Luigi%20-%20Bowser%27s%20Inside%20Story.zip"
   },
   {
     "name": "Mario Kart DS.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Mario%20Kart%20DS.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Mario%20Kart%20DS.zip"
   },
   {
     "name": "Mario Party DS.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Mario%20Party%20DS.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Mario%20Party%20DS.zip"
   },
   {
     "name": "New Super Mario Bros..zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/New%20Super%20Mario%20Bros..zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/New%20Super%20Mario%20Bros..zip"
+  },
+  {
+    "name": "Pokemon Conquest.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Conquest.zip"
   },
   {
     "name": "Pokemon HeartGold Version.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20HeartGold%20Version.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20HeartGold%20Version.zip"
   },
   {
     "name": "Pokemon Mystery Dungeon - Explorers of Sky.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Mystery%20Dungeon%20-%20Explorers%20of%20Sky.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20Mystery%20Dungeon%20-%20Explorers%20of%20Sky.zip"
+  },
+  {
+    "name": "Sonic Chronicles - The Dark Brotherhood.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Sonic%20Chronicles%20-%20The%20Dark%20Brotherhood.zip"
   },
   {
     "name": "Sonic Rush Adventure.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Sonic%20Rush%20Adventure.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Sonic%20Rush%20Adventure.zip"
   },
   {
     "name": "Sonic Rush.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Sonic%20Rush.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Sonic%20Rush.zip"
   },
   {
     "name": "Super Mario 64 DS.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/Super%20Mario%2064%20DS.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Super%20Mario%2064%20DS.zip"
   },
   {
     "name": "The Legend of Zelda - Phantom Hourglass.zip",
     "console": "NDS",
-    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/NDS/The%20Legend%20of%20Zelda%20-%20Phantom%20Hourglass.zip"
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/The%20Legend%20of%20Zelda%20-%20Phantom%20Hourglass.zip"
   },
   {
     "name": "8 Eyes (USA).zip",

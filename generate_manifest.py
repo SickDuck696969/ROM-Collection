@@ -10,7 +10,7 @@ BRANCH = "master"
 manifest = []
 VALID_EXTENSIONS = {".zip", ".7z", ".nes", ".sfc", ".gba", ".n64", ".z64", ".bin", ".gb", ".gbc", ".epub", ".pdf", ".mp3", ".jar"}
 
-# Ask Git directly for the repository structure instead of scanning the hard drive
+# Ask Git directly for the repository structure
 result = subprocess.run(['git', 'ls-tree', '-r', '--name-only', 'HEAD'], capture_output=True, text=True)
 all_files = result.stdout.splitlines()
 
@@ -18,7 +18,6 @@ all_files = result.stdout.splitlines()
 folders = {}
 
 for file_path in all_files:
-    # Skip files in the root directory (like generate_manifest.py, manifest.json)
     if "/" not in file_path:
         continue
         
@@ -26,21 +25,18 @@ for file_path in all_files:
     folder_name = parts[0]
     file_name = parts[-1]
     
-    # Ignore hidden GitHub/Git folders
     if folder_name in {".git", ".github", "node_modules"}:
         continue
         
     if folder_name not in folders:
         folders[folder_name] = []
         
-    # Check if the file is a valid ROM extension
     if any(file_name.lower().endswith(ext) for ext in VALID_EXTENSIONS):
         folders[folder_name].append(file_path)
 
 # Build the manifest dictionary
 for folder_name, files in folders.items():
     if not files:
-        # If the folder has no ROMs, add a dummy entry so the app sees the console
         manifest.append({
             "name": ".empty",
             "console": folder_name,
@@ -49,10 +45,17 @@ for folder_name, files in folders.items():
     else:
         for file_path in files:
             file_name = os.path.basename(file_path)
-            
-            # Safely encode the path for the web
             encoded_path = urllib.parse.quote(file_path, safe='/')
-            download_url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{encoded_path}"
+            
+            # Check if this file is tracked by Git LFS
+            attr_check = subprocess.run(['git', 'check-attr', 'filter', '--', file_path], capture_output=True, text=True)
+            is_lfs = "lfs" in attr_check.stdout.split()
+
+            # Select URL host based on LFS status
+            if is_lfs:
+                download_url = f"https://media.githubusercontent.com/media/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{encoded_path}"
+            else:
+                download_url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{encoded_path}"
             
             manifest.append({
                 "name": file_name,
@@ -60,9 +63,9 @@ for folder_name, files in folders.items():
                 "downloadUrl": download_url
             })
 
-# Sort alphabetically by Console, then by Game Name
 manifest.sort(key=lambda x: (x["console"].lower(), x["name"].lower()))
 
-# Save the JSON file
 with open("manifest.json", "w") as f:
     json.dump(manifest, f, indent=2)
+
+print("manifest.json successfully generated!")

@@ -1,2 +1,2 @@
-ROM-Collection/NDS/*.zip filter=lfs diff=lfs merge=lfs -text
 NDS/*.zip filter=lfs diff=lfs merge=lfs -text
+Arcade/*.zip filter=lfs diff=lfs merge=lfs -text

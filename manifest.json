@@ -1,8 +1,53 @@
 [
   {
-    "name": ".empty",
+    "name": "1944.zip",
     "console": "Arcade",
-    "downloadUrl": ""
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/1944.zip"
+  },
+  {
+    "name": "dino.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/dino.zip"
+  },
+  {
+    "name": "kof98.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/kof98.zip"
+  },
+  {
+    "name": "kov2.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/kov2.zip"
+  },
+  {
+    "name": "mslug.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/mslug.zip"
+  },
+  {
+    "name": "neogeo.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/neogeo.zip"
+  },
+  {
+    "name": "pgm.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/pgm.zip"
+  },
+  {
+    "name": "progear.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/progear.zip"
+  },
+  {
+    "name": "sengoku3.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/sengoku3.zip"
+  },
+  {
+    "name": "shocktr2.zip",
+    "console": "Arcade",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/Arcade/shocktr2.zip"
   },
   {
     "name": "Fire Caste.epub",
@@ -6003,6 +6048,11 @@
     "name": "The Legend of Zelda - Phantom Hourglass.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/The%20Legend%20of%20Zelda%20-%20Phantom%20Hourglass.zip"
+  },
+  {
+    "name": "WarioWare - D.I.Y. (USA).zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/WarioWare%20-%20D.I.Y.%20%28USA%29.zip"
   },
   {
     "name": "WarioWare Touched!.zip",

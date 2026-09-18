@@ -5930,14 +5930,29 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/N64/Yoshi%27s%20Story%20%28USA%29%20%28En%2CJa%29.zip"
   },
   {
+    "name": "Advance Wars - Days of Ruin (USA) (En,Fr,Es).zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Advance%20Wars%20-%20Days%20of%20Ruin%20%28USA%29%20%28En%2CFr%2CEs%29.zip"
+  },
+  {
     "name": "Advance Wars - Dual Strike.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Advance%20Wars%20-%20Dual%20Strike.zip"
   },
   {
+    "name": "Aliens Infestation.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Aliens%20Infestation.zip"
+  },
+  {
     "name": "Animal Crossing - Wild World.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Animal%20Crossing%20-%20Wild%20World.zip"
+  },
+  {
+    "name": "Castlevania - Dawn of Sorrow (U).zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Castlevania%20-%20Dawn%20of%20Sorrow%20%28U%29.zip"
   },
   {
     "name": "Chrono Trigger.zip",
@@ -5958,6 +5973,11 @@
     "name": "Digimon World DS.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Digimon%20World%20DS.zip"
+  },
+  {
+    "name": "Dragon Quest V - Hand of the Heavenly Bride.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Dragon%20Quest%20V%20-%20Hand%20of%20the%20Heavenly%20Bride.zip"
   },
   {
     "name": "Grand Theft Auto - Chinatown Wars.zip",
@@ -6028,6 +6048,16 @@
     "name": "Pokemon White Version.zip",
     "console": "NDS",
     "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Pokemon%20White%20Version.zip"
+  },
+  {
+    "name": "Radiant Historia.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Radiant%20Historia.zip"
+  },
+  {
+    "name": "Rune Factory 3.zip",
+    "console": "NDS",
+    "downloadUrl": "https://media.githubusercontent.com/media/SickDuck696969/ROM-Collection/master/NDS/Rune%20Factory%203.zip"
   },
   {
     "name": "Sonic Chronicles - The Dark Brotherhood.zip",

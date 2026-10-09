@@ -1945,6 +1945,16 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Boktai%202%20-%20Solar%20Boy%20Django%20%28USA%29.zip"
   },
   {
+    "name": "Bomberman Tournament (USA, Europe).zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Bomberman%20Tournament%20%28USA%2C%20Europe%29.zip"
+  },
+  {
+    "name": "Bookworm.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Bookworm.zip"
+  },
+  {
     "name": "Breath of Fire (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Breath%20of%20Fire%20%28USA%29.zip"
@@ -1988,6 +1998,11 @@
     "name": "ChuChu Rocket! (USA) (En,Ja,Fr,De,Es).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/ChuChu%20Rocket%21%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.zip"
+  },
+  {
+    "name": "Comix Zone GBA.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Comix%20Zone%20GBA.zip"
   },
   {
     "name": "Crash Bandicoot - The Huge Adventure.zip",

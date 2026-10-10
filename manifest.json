@@ -2195,6 +2195,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Kao%20the%20Kangaroo%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CNl%29.zip"
   },
   {
+    "name": "King of Fighters EX2 - The Howling Blood.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/King%20of%20Fighters%20EX2%20-%20The%20Howling%20Blood.zip"
+  },
+  {
     "name": "Kingdom Hearts - Chain of Memories (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Kingdom%20Hearts%20-%20Chain%20of%20Memories%20%28USA%29.zip"
@@ -2405,6 +2410,11 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Metroid%20Fusion%20%28USA%29.zip"
   },
   {
+    "name": "Mobile Suit Gundam Seed - Battle Assault.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Mobile%20Suit%20Gundam%20Seed%20-%20Battle%20Assault.zip"
+  },
+  {
     "name": "Mother 3 (Japan) [T-En by Chewy & Jeffman & Tomato v1.3].zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Mother%203%20%28Japan%29%20%5BT-En%20by%20Chewy%20%26%20Jeffman%20%26%20Tomato%20v1.3%5D.zip"
@@ -2535,9 +2545,19 @@
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Riviera_%20The%20Promised%20Land.zip"
   },
   {
+    "name": "Road Rash - Jailbreak.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Road%20Rash%20-%20Jailbreak.zip"
+  },
+  {
     "name": "Sabre Wulf (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Sabre%20Wulf%20%28USA%29.zip"
+  },
+  {
+    "name": "SD Gundam Force.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/SD%20Gundam%20Force.zip"
   },
   {
     "name": "Shining Soul II.zip",
@@ -2683,6 +2703,11 @@
     "name": "Teenage Mutant Ninja Turtles 2 - Battle Nexus (USA).zip",
     "console": "GBA",
     "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Teenage%20Mutant%20Ninja%20Turtles%202%20-%20Battle%20Nexus%20%28USA%29.zip"
+  },
+  {
+    "name": "Tekken Advance.zip",
+    "console": "GBA",
+    "downloadUrl": "https://raw.githubusercontent.com/SickDuck696969/ROM-Collection/master/GBA/Tekken%20Advance.zip"
   },
   {
     "name": "Tetris Worlds (USA).zip",
